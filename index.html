@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>测试</title>
+    <title>一言网页</title>
     <style>
         body {
+            background-image: url('images/0001.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 200px;
@@ -11,12 +14,12 @@
         
         #quote {
             font-size: 24px;
-            color: #333;
+            color: #fb0000;
         }
         
         #author {
             font-size: 18px;
-            color: #666;
+            color: #d64747;
             margin-top: 10px;
         }
     </style>
@@ -34,7 +37,7 @@
                 document.getElementById('author').textContent = '—— ' + data.from;
             })
             .catch(error => {
-                console.log('获取', error);
+                console.log('获取一言失败', error);
             });
     </script>
 </body>
