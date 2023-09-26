@@ -1,44 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
-    <title>一言</title>
-    <style>
-        body {
-            background-image: url('images/0001.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 200px;
-        }
-        
-        #quote {
-            font-size: 24px;
-            color: #fb0000;
-        }
-        
-        #author {
-            font-size: 18px;
-            color: #d64747;
-            margin-top: 10px;
-        }
-    </style>
+    <meta http-equiv="refresh" content="0;url=https://hml-001.gitee.io/">
+    <title></title>
 </head>
 <body>
-    <div id="quote">加载中...</div>
-    <div id="author"></div>
-
-    <script>
-        // 从一言 API 获取随机的一言
-        fetch('https://v1.hitokoto.cn')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('quote').textContent = data.hitokoto;
-                document.getElementById('author').textContent = '—— ' + data.from;
-            })
-            .catch(error => {
-                console.log('获取一言失败', error);
-            });
-    </script>
 </body>
 </html>
